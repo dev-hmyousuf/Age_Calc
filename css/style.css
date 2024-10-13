@@ -28,3 +28,6 @@
 .result span {
   @apply text-yellow-300
 }
+#toast span {
+  @apply text-yellow-500 text-xl
+}
