@@ -22,7 +22,7 @@ function calculateAge() {
     showToast('Zen Z');
 } 
 // Baby Boomers
-else if (birthYear === 1946) {
+else if (birthYear >= 1946 && birthYear <= 1964) {
     showToast('Baby Boomers'); 
 } 
 // Generation X
