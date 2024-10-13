@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .custom-gradient {
+      @apply bg-gradient-to-br from-[#4203a9] to-[#90bafc];
+    }
+    .custom-calendar::-webkit-calendar-picker-indicator {
+      @apply top-0 left-0 right-0
+      bottom-0 w-auto h-auto absolute 
+    }
+  
+    .custom-calendar::-webkit-calendar-picker-indicator{
+      background-position: calc(100% - 10px);
+      background-size: 10px;
+      cursor: pointer;
+    }
+}
+
+@font-face {
+  font-family: Bangla;
+  src: url(../assets/bangla.ttf);
+}
+.result p {
+  @apply text-red-500 p-3 bg-white bg-opacity-40
+}
+.result span {
+  @apply text-yellow-300
+}

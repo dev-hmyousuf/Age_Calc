@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator || Html, Tailwindcss, Js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="w-full font-Bangla min-h-screen bg-custom-gradient flex justify-center items-center text-white p-2">
+        <div class="calculator w-full py-10 max-w-[600px] mx-[10%]">
+            <h1 class="text-4xl md:text-6xl">
+                জাভাস্ক্রিপ্ট <br />
+                <span class="text-yellow-300 ml-24">বয়স ক্যালকুলেটর</span>
+            </h1>
+            <div class="inputBox gap-2 flex-col md:flex-row my-10 p-8 rounded-lg bg-white bg-opacity-30 flex items-center text-black">
+                <input
+                    class="bg-white flex-[1] py-3 px-5 border-transparent outline-none text-xl rounded-sm relative custom-calendar w-full"
+                    type="date"
+                    id="date"
+                />
+                <button id="submitBtn" class="bg-yellow-300 border-0 outline-0 py-4 px-6 rounded-r-sm w-full md:w-1/3 font-medium text-[#333] cursor-pointer"
+                >
+                    হিসাব করুন
+                </button>
+            </div>
+            <div class="result text-2xl h-8 text-center" id="result"></div>
+            <div id="table" class="flex flex-col my-10 hidden">
+                <div class="-m-1.5 rounded-xl bg-gray-300 overflow-x-auto">
+                    <div class="p-1.5 min-w-full inline-block align-middle">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 text-start text-lg font-medium text-gray-500 uppercase dark:text-neutral-500">Name</th>
+                                        <th scope="col" class="px-6 py-3 text-start text-lg font-medium text-gray-500 uppercase dark:text-neutral-500">বয়স</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">মাস হিসেবে বয়স</td>
+                                        <td id="age-months" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">দিন হিসেবে বয়স</td>
+                                        <td id="age-days" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">ঘণ্টা হিসেবে বয়স</td>
+                                        <td id="age-hours" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">মিনিট হিসেবে বয়স</td>
+                                        <td id="age-minutes" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">সেকেন্ড হিসেবে বয়স</td>
+                                        <td id="age-seconds" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">মিলিসেকেন্ড হিসেবে বয়স</td>
+                                        <td id="age-milliseconds" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-800 dark:text-neutral-200">ন্যানোসেকেন্ড হিসেবে বয়স</td>
+                                        <td id="age-nanoseconds" class="px-6 py-4 whitespace-nowrap text-lg text-gray-800 dark:text-neutral-200">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed z-[999999999999] bottom-0 flex justify-center items-center w-full p-3 font-Bangla text-xl bg-gray-300 bg-opacity-90 hidden">জাভাস্ক্রিপ্ট <span class="mx-1 text-yellow-300">বয়স ক্যালকুলেটর</span> - বানিয়েছেন <a href="https://hmyousuf.vercel.app" class="ml-1 text-blue-600 border-b border-blue-700"> এইচ, এম, ইউসুফ</a></div>
+
+   <script type="module" src="./js/script.js"></script>
+</body>
+</html>
